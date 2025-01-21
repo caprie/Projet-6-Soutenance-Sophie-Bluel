@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/
+back/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -16,173 +16,719 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  background-color: #fffef8;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 /** end reset css**/
 body {
-	max-width: 1140px;
-	margin:auto;
-	font-family: 'Work Sans' ;
-	font-size: 14px;
+  max-width: 1140px;
+  margin: auto;
+  font-family: "Work Sans";
+  font-size: 14px;
 }
 header {
-	display: flex;
-	justify-content: space-between;
-	margin: 50px 0
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0;
 }
 section {
-	margin: 50px 0
+  margin: 50px 0;
 }
 
-h1{
-	display: flex;
-	flex-direction: column;
-	font-family: 'Syne';
-	font-size: 22px;
-	font-weight: 800;
-	color: #B1663C
+h1 {
+  display: flex;
+  flex-direction: column;
+  font-family: "Syne";
+  font-size: 22px;
+  font-weight: 800;
+  color: #b1663c;
 }
 
 h1 > span {
-	font-family: 'Work Sans';
-	font-size:10px;
-	letter-spacing: 0.1em;
-;
+  font-family: "Work Sans";
+  font-size: 10px;
+  letter-spacing: 0.1em;
 }
 
-h2{
-	font-family: 'Syne';
-	font-weight: 700;
-	font-size: 30px;
-	color: #1D6154
+h2 {
+  font-size: 30px;
+  color: #1d6154;
+  font-family: "Syne";
 }
 nav ul {
-	display: flex;
-	align-items: center;
-	list-style-type: none;
-
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  font-size: 12px;
+  font-weight: 300;
+  color: #3d3d3d;
 }
 nav li {
-	padding: 0 10px;
-	font-size: 1.2em;
+  padding: 0 10px;
+  font-size: 1.2em;
+}
+
+nav li:hover {
+  color: #b1663c;
 }
 
 li:hover {
-	color: #B1663C;
+  color: #b1663c;
 }
 #introduction {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 }
 #introduction figure {
-	flex: 1
+  flex: 1;
 }
 #introduction img {
-	display: block;
-	margin: auto;
-	width: 80%;
+  margin: auto;
+  width: 80%;
 }
 
 #introduction article {
-	flex: 1
+  flex: 1;
 }
 #introduction h2 {
-	margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 #introduction p {
-	margin-bottom: 0.5em;
+  margin-bottom: 0.5em;
+}
+#portfolio {
+  position: relative; /* Permet de positionner les éléments enfants */
 }
 #portfolio h2 {
-	text-align: center;
-	margin-bottom: 1em;
+  text-align: center;
+  margin-bottom: 1em;
 }
 .gallery {
-	width: 100%;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-column-gap: 20px;
-	grid-row-gap: 20px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
 }
 
 .gallery img {
-	width: 100%;
-
+  width: 100%;
 }
 #contact {
-	width: 50%;
-margin: auto;
+  width: 50%;
+  margin: auto;
 }
 #contact > * {
-	text-align: center;
-
+  text-align: center;
 }
-#contact h2{
-	margin-bottom: 20px;
+#contact h2 {
+  margin-bottom: 20px;
 }
 #contact form {
-	text-align: left;
-	margin-top:30px;
-	display: flex;
-	flex-direction: column;
+  text-align: left;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 #contact input {
-	height: 50px;
-	font-size: 1.2em;
-	border: none;
-	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+  height: 50px;
+  font-size: 1.2em;
+  border: none;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
 }
 #contact label {
-	margin: 2em 0 1em 0;
+  margin: 2em 0 1em 0;
 }
 #contact textarea {
-	border: none;
-	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+  border: none;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
 }
 
-input[type="submit"]{
-	font-family: 'Syne';
-	font-weight: 700;
-	color: white;
-	background-color: #1D6154;
-	margin : 2em auto ;
-	width: 180px;
-	text-align: center;
-	border-radius: 60px ;
+input[type="submit"] {
+  font-family: "Syne";
+  font-weight: 700;
+  color: white;
+  background-color: #1d6154;
+  margin: 2em auto;
+  width: 180px;
+  text-align: center;
+  border-radius: 60px;
 }
 
 footer nav ul {
-	display: flex;
-	justify-content: flex-end;
-	margin: 2em
+  display: flex;
+  justify-content: flex-end;
+  margin: 2em;
 }
 
+/* code style btn category */
+#menu-categories {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 40px;
+}
+#menu-categories button {
+  font-family: Syne;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.2px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #1d6154;
+  height: 35px;
+  padding-left: 14px;
+  padding-right: 14px;
+  border: 1px solid rgba(29, 97, 84, 1);
+  border-radius: 60px;
+}
+#menu-categories button:hover {
+  background-color: #1d6154;
+  color: white;
+}
+
+#menu-categories .active {
+  background-color: #1d6154;
+  color: white;
+}
+
+#contact p {
+  margin: 0.5em auto;
+}
+a {
+  color: #3d3d3d;
+  text-decoration: underline;
+  font-size: 12px;
+}
+
+a:hover {
+  font-weight: bold;
+  color: #b1663c;
+}
+
+.hidden {
+  /*cacher la visibilité du bouton quand admin non logué */
+  display: none !important;
+}
+
+#edit-mode {
+  justify-content: center;
+  align-items: center;
+  border: none;
+  margin-top: -23px;
+  background-color: transparent;
+  width: 90px;
+  font-size: 14px;
+  font-family: "Work Sans";
+  cursor: pointer;
+  transition: color 300ms ease-out;
+}
+
+#edit-mode i {
+  margin-right: 6px; /* Espace entre l'icône et le texte */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  color: black;
+  width: 12px;
+  height: 14px;
+}
+
+#edit-mode:hover {
+  color: #b1663c; /* Change la couleur du texte et de l'icône au survol */
+}
+
+#edit-mode:hover i {
+  color: #b1663c; /* Assure que l'icône suit la même couleur */
+}
+
+#edit-bar {
+  position: fixed; /* Fixe la barre en haut de l'écran */
+  top: 0;
+  left: 0;
+  width: 100%; /* Barre couvrant toute la largeur */
+  height: 10px;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-family: "Work Sans", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 10px 0;
+  z-index: 1000; /* Assure que la barre reste au-dessus des autres éléments */
+}
+#edit-bar p {
+  margin: 0;
+  font-weight: 100;
+  background-color: black;
+  color: white;
+}
+
+#edit-bar i {
+  background-color: black;
+  color: white;
+  font-family: "Font Awesome 5 Free";
+}
+/* ------------------MODALE ----------------------------*/
+
+/* MODALE - Fond noir semi-transparent */
+#modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* MODALE - Contenu */
+.modal-content {
+  position: relative;
+  width: 630px;
+  height: 630px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+/* MODALE - Bouton de fermeture */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #b1663c;
+}
+
+.close:focus {
+  outline: none;
+  color: #b1663c;
+}
+
+.arrow-left {
+  position: absolute;
+  left: 30px;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* MODALE - Galerie */
+.gallery-modal {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 colonnes */
+  gap: 10px;
+  justify-content: center;
+}
+
+.gallery-modal img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+#add-photo {
+  background-color: #1d6154;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-family: "Syne";
+  cursor: pointer;
+  margin-top: 5px;
+  margin-bottom: 35px;
+}
+
+#add-photo:hover {
+  background-color: #b1663c;
+}
+
+/* Styles pour les modales */
+
+#gallery-modal,
+#photo-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+}
+
+#add-project-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #e8f1f6;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 500px;
+  height: 115px;
+  margin-left: 66px;
+  margin-top: 31px;
+  padding-top: 82px;
+  border-radius: 5px;
+}
+
+/* Classe pour afficher la modale */
+#gallery-modal.show {
+  display: flex; /* Rend la modale visible */
+  opacity: 1;
+  transform: scale(1);
+}
+
+.modal-content h3 {
+  font-family: "Syne", sans-serif;
+  font-size: 26px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  height: 30px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+figure {
+  font-size: 13px;
+  font-weight: 400;
+  color: #3d3d3d;
+  border-radius: 30%;
+}
+.delete-button {
+  font-size: 17px;
+  color: green;
+  background-color: black;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.gallery-modal figure {
+  position: relative; /* Nécessaire pour le positionnement absolu des enfants */
+}
+
+.trash-icon {
+  position: absolute; /* Positionne par rapport à la figure */
+  top: 5px;
+  right: 5px;
+  font-size: 17px;
+  background-color: #fff;
+  color: black;
+  padding: 2px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.separator-line-gallery {
+  width: 500px;
+  height: 1px;
+  background-color: #b3b3b3;
+  margin: 45px 55px 0px 50px; /* Espacement autour de la ligne */
+  margin-bottom: 70px;
+}
+.add-photo-label {
+  background-color: #e8f1f6;
+}
+.montain-sun {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  font-size: 30px;
+  color: #a7a7a7;
+  width: 55px;
+  height: 55px;
+  padding: 2px;
+}
+.montain-sun i {
+  background-color: transparent !important;
+  border: 4px solid #b9c5cc;
+  padding-top: 5px;
+  border-radius: 10px;
+  color: #b9c5cc;
+}
+.add-photo-btn {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  align-items: center;
+  background-color: transparent;
+  font-size: 14px;
+  text-align: center;
+  color: #306685;
+  width: 173px;
+  height: 36px;
+  border: none;
+  border-radius: 50px;
+  background-color: #cbd6dc;
+}
+
+#preview-container {
+  position: absolute; /* Permet de positionner l'aperçu par rapport à son conteneur parent */
+  top: 118px;
+  left: 50%;
+  transform: translateX(-50%); /* Correction pour le centrage */
+  text-align: center;
+}
+
+#image {
+  display: none; /* Masque l'élément */
+}
+
+#image-preview {
+  width: 171px;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Conteneur des champs "Titre", "Catégorie" et "Valider" */
+.form-fields-container {
+  margin-top: 40px; /* Pour s'assurer qu'il ne chevauche pas l'autre conteneur */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.icon-and-photo-container {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: -10px;
+  flex-direction: column;
+  width: 500px;
+  margin-top: 240px;
+  padding-top: 10px;
+  min-height: 180px;
+  position: relative;
+}
+
+.image-format {
+  font-size: 10px;
+  font-weight: 400;
+  text-align: center;
+  color: #444;
+  height: 12px;
+  padding-left: 14px;
+  padding-right: 14px;
+  background-color: transparent;
+  margin-top: -15px;
+  padding-top: 2px;
+  font-family: "Work Sans";
+}
+
+#photo-title {
+  position: relative;
+  margin-right: 460px;
+  width: 32px;
+  height: 16px;
+  font-family: "Work Sans";
+  font-size: 14px;
+  color: #3d3d3d;
+  font-weight: 500;
+  display: flex;
+}
+
+#category {
+  margin-top: 55px;
+  border: 0px;
+  margin-right: 0px;
+  width: 500px;
+  height: 25px;
+  background-color: #fff;
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.3);
+  font-size: 14px;
+  font-weight: 300;
+  font-family: "Work Sans";
+  color: #3d3d3d;
+}
+#category-list {
+  position: relative;
+  margin-top: 55px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Work Sans";
+  color: #3d3d3d;
+  margin-right: 430px;
+  font-family: Work Sans;
+  top: 35px;
+}
+
+#category option:disabled {
+  color: #3d3d3d;
+  font-style: "Work Sans";
+  font-weight: 500;
+  font-size: 14px;
+}
+
+#title {
+  position: relative;
+  top: 30px;
+  outline: none;
+  width: 475px;
+  height: 10px;
+  font-size: 14px;
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+}
+
+.field-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #3d3d3d;
+  margin-bottom: 5px;
+  font-family: "Work Sans", sans-serif;
+  width: 32px;
+  margin-right: 470px;
+
+  top: 100px;
+}
+
+.field input,
+.field select {
+  /* Style pour les inputs et selects */
+  font-size: 14px;
+  color: #3d3d3d;
+  padding: 10px;
+  border: 0px;
+
+  width: 100%; /* S'adapte à la largeur du conteneur parent */
+  background-color: #fff;
+  font-family: "Work Sans", sans-serif;
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.field input:focus,
+.field select:focus {
+  border-color: #1d6154;
+}
+
+.separator-line {
+  width: 500px;
+  height: 1px;
+  background-color: #b3b3b3;
+  margin: 15px 0;
+  margin-bottom: 50px;
+}
+
+/*Styles pour le bouton de validation*/
+#submit-photo {
+  display: flex;
+  background-color: #a7a7a7;
+  margin-top: -13px;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px 20px;
+  width: 237px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  align-self: center; /* Centre le bouton dans le conteneur */
+  transition: background-color 0.3s ease;
+}
+
+.error-message {
+  display: none; /* Tous les messages d'erreur sont cachés par défaut */
+  color: red; /* Si affichés, ils seront en rouge */
+  font-size: 0.9em;
+  margin-top: 5px;
+  background-color: inherit;
+}
+
+#title-photo-modal:focus,
+#category:focus {
+  outline: none; /* Supprime le cadre par défaut */
+}

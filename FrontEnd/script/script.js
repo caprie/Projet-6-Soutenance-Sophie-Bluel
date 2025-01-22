@@ -52,24 +52,25 @@ links.forEach((link) => {
 //------------------- style logout -----------------
 // Fonction pour basculer le texte et l'action du bouton Login/Logout
 function toggleLoginLogoutButton() {
-  const loginLogoutButton = document.getElementById('loginLogoutButton');
-  
-  
+  const loginLogoutButton = document.getElementById("loginLogoutButton");
+
   if (loginLogoutButton) {
-    if (localStorage.getItem('authToken')) {
-      loginLogoutButton.textContent = 'Logout';
+    if (localStorage.getItem("authToken")) {
+      loginLogoutButton.textContent = "Logout";
       loginLogoutButton.onclick = () => {
-        localStorage.removeItem('authToken');
-        window.location.href = '/FrontEnd/login.html';
+        localStorage.removeItem("authToken");
+        window.location.href = "/FrontEnd/login.html";
       };
     } else {
-      loginLogoutButton.textContent = 'Login';
+      loginLogoutButton.textContent = "Login";
       loginLogoutButton.onclick = () => {
-        window.location.href = '/FrontEnd/login.html';
+        window.location.href = "/FrontEnd/login.html";
       };
     }
   } else {
-    console.error("Erreur : L'élément avec l'ID 'loginLogoutButton' est introuvable.");
+    console.error(
+      "Erreur : L'élément avec l'ID 'loginLogoutButton' est introuvable."
+    );
   }
 }
 
@@ -216,7 +217,7 @@ async function init() {
 }
 
 // Appelle la fonction d'initialisation dès le chargement de la page
-document.addEventListener('DOMContentLoaded', init);
+document.addEventListener("DOMContentLoaded", init);
 
 // ----------------- INTERACTIONS UTILISATEUR ------------------
 
@@ -503,8 +504,6 @@ function addphoto() {
     }
   }
 
- 
-
   // Ajoute des écouteurs pour surveiller les champs
   document
     .querySelector("#title-photo-modal")
@@ -529,7 +528,6 @@ function addphoto() {
     const imageField = document.querySelector("#image");
     const submitButton = document.querySelector("#submit-photo");
 
-   
     // Récupère les données du formulaire
     const formData = new FormData(form); // Récupère les données du formulaire
 

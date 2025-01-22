@@ -17,6 +17,7 @@
     <meta name="description" content="" />
     <link rel="stylesheet" href="/FrontEnd/assets/style.css" />
   </head>
+
   <body>
     <div id="edit-bar" class="hidden">
       <p><i class="fa-light fa-pen-to-square"></i> Mode édition</p>
@@ -28,8 +29,14 @@
         <ul>
           <li><a href="index.html#portfolio">projets</a></li>
           <li><a href="index.html#contact">contact</a></li>
-          <li><a id="loginLogoutButton" href="/FrontEnd/script/login.html">login</a></li>
-          <li><img src="/FrontEnd/assets/icons/instagram.png" alt="Instagram" /></li>
+          <li>
+            <a id="loginLogoutButton" href="/FrontEnd/script/login.html"
+              >login</a
+            >
+          </li>
+          <li>
+            <img src="/FrontEnd/assets/icons/instagram.png" alt="Instagram" />
+          </li>
         </ul>
       </nav>
     </header>
@@ -112,7 +119,7 @@
         </div>
 
         <h3>Ajout photo</h3>
-        
+
         <form id="add-project-form">
           <div class="icon-and-photo-container">
             <div class="montain-sun">
@@ -123,7 +130,6 @@
               <input type="file" id="image" name="image" accept="image/*" />
             </label>
             <p class="image-format">jpg, png : 4mo max</p>
-            
           </div>
 
           <div id="preview-container">
@@ -138,8 +144,6 @@
             <div class="field">
               <label for="title-photo-modal" id="photo-title">Titre</label>
               <input type="text" id="title-photo-modal" name="title" required />
-
-              
             </div>
 
             <div class="field-field-category">
@@ -148,7 +152,8 @@
                 <option value="" disabled selected hidden></option>
               </select>
               <p class="error-message">
-                Vous devez sélectionner une catégorie.</p>
+                Vous devez sélectionner une catégorie.
+              </p>
             </div>
 
             <!-- Ligne de séparation -->
@@ -162,7 +167,8 @@
               id="submit-photo"
               class="validate-btn"
               disabled
-            >Valider
+            >
+              Valider
             </button>
           </div>
         </form>

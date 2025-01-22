@@ -48,7 +48,7 @@ async function handleLogin() {
         // stocke le token dans localStorage
         localStorage.setItem("authToken", data.token);
         console.log("Token stocké :", localStorage.getItem("authToken"));
-        
+
         // redirection vers page d'accueil
         window.location.href = "/FrontEnd/script/index.html"; // Assurez-vous que ce chemin est correct
       } else {

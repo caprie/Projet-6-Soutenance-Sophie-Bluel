@@ -1,21 +1,90 @@
-back/* http://meyerweb.com/eric/tools/css/reset/
+back
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -24,6 +93,7 @@ time, mark, audio, video {
   vertical-align: baseline;
   background-color: #fffef8;
 }
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -38,17 +108,21 @@ nav,
 section {
   display: block;
 }
+
 body {
   line-height: 1;
 }
+
 ol,
 ul {
   list-style: none;
 }
+
 blockquote,
 q {
   quotes: none;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,
@@ -56,10 +130,12 @@ q:after {
   content: "";
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
 /** end reset css**/
 body {
   max-width: 1140px;
@@ -67,11 +143,13 @@ body {
   font-family: "Work Sans";
   font-size: 14px;
 }
+
 header {
   display: flex;
   justify-content: space-between;
   margin: 50px 0;
 }
+
 section {
   margin: 50px 0;
 }
@@ -96,6 +174,7 @@ h2 {
   color: #1d6154;
   font-family: "Syne";
 }
+
 nav ul {
   display: flex;
   align-items: center;
@@ -104,6 +183,7 @@ nav ul {
   font-weight: 300;
   color: #3d3d3d;
 }
+
 nav li {
   padding: 0 10px;
   font-size: 1.2em;
@@ -116,13 +196,16 @@ nav li:hover {
 li:hover {
   color: #b1663c;
 }
+
 #introduction {
   display: flex;
   align-items: center;
 }
+
 #introduction figure {
   flex: 1;
 }
+
 #introduction img {
   margin: auto;
   width: 80%;
@@ -131,6 +214,7 @@ li:hover {
 #introduction article {
   flex: 1;
 }
+
 #introduction h2 {
   margin-bottom: 1em;
 }
@@ -138,13 +222,17 @@ li:hover {
 #introduction p {
   margin-bottom: 0.5em;
 }
+
 #portfolio {
-  position: relative; /* Permet de positionner les éléments enfants */
+  position: relative;
+  /* Permet de positionner les éléments enfants */
 }
+
 #portfolio h2 {
   text-align: center;
   margin-bottom: 1em;
 }
+
 .gallery {
   width: 100%;
   display: grid;
@@ -156,16 +244,20 @@ li:hover {
 .gallery img {
   width: 100%;
 }
+
 #contact {
   width: 50%;
   margin: auto;
 }
+
 #contact > * {
   text-align: center;
 }
+
 #contact h2 {
   margin-bottom: 20px;
 }
+
 #contact form {
   text-align: left;
   margin-top: 30px;
@@ -179,9 +271,11 @@ li:hover {
   border: none;
   box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
 }
+
 #contact label {
   margin: 2em 0 1em 0;
 }
+
 #contact textarea {
   border: none;
   box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
@@ -212,6 +306,7 @@ footer nav ul {
   gap: 20px;
   padding-bottom: 40px;
 }
+
 #menu-categories button {
   font-family: Syne;
   font-size: 16px;
@@ -227,6 +322,7 @@ footer nav ul {
   border: 1px solid rgba(29, 97, 84, 1);
   border-radius: 60px;
 }
+
 #menu-categories button:hover {
   background-color: #1d6154;
   color: white;
@@ -240,6 +336,7 @@ footer nav ul {
 #contact p {
   margin: 0.5em auto;
 }
+
 a {
   color: #3d3d3d;
   text-decoration: underline;
@@ -270,7 +367,8 @@ a:hover {
 }
 
 #edit-mode i {
-  margin-right: 6px; /* Espace entre l'icône et le texte */
+  margin-right: 6px;
+  /* Espace entre l'icône et le texte */
   font-family: "Font Awesome 5 Free";
   font-weight: 400;
   color: black;
@@ -279,18 +377,22 @@ a:hover {
 }
 
 #edit-mode:hover {
-  color: #b1663c; /* Change la couleur du texte et de l'icône au survol */
+  color: #b1663c;
+  /* Change la couleur du texte et de l'icône au survol */
 }
 
 #edit-mode:hover i {
-  color: #b1663c; /* Assure que l'icône suit la même couleur */
+  color: #b1663c;
+  /* Assure que l'icône suit la même couleur */
 }
 
 #edit-bar {
-  position: fixed; /* Fixe la barre en haut de l'écran */
+  position: fixed;
+  /* Fixe la barre en haut de l'écran */
   top: 0;
   left: 0;
-  width: 100%; /* Barre couvrant toute la largeur */
+  width: 100%;
+  /* Barre couvrant toute la largeur */
   height: 10px;
   background-color: black;
   color: white;
@@ -302,8 +404,10 @@ a:hover {
   font-size: 12px;
   font-weight: bold;
   padding: 10px 0;
-  z-index: 1000; /* Assure que la barre reste au-dessus des autres éléments */
+  z-index: 1000;
+  /* Assure que la barre reste au-dessus des autres éléments */
 }
+
 #edit-bar p {
   margin: 0;
   font-weight: 100;
@@ -316,6 +420,7 @@ a:hover {
   color: white;
   font-family: "Font Awesome 5 Free";
 }
+
 /* ------------------MODALE ----------------------------*/
 
 /* MODALE - Fond noir semi-transparent */
@@ -336,7 +441,7 @@ a:hover {
 .modal-content {
   position: relative;
   width: 630px;
-  height: 630px;
+  height: 870px;
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
@@ -374,7 +479,8 @@ a:hover {
 /* MODALE - Galerie */
 .gallery-modal {
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* 5 colonnes */
+  grid-template-columns: repeat(5, 1fr);
+  /* 5 colonnes */
   gap: 10px;
   justify-content: center;
 }
@@ -438,7 +544,8 @@ a:hover {
 
 /* Classe pour afficher la modale */
 #gallery-modal.show {
-  display: flex; /* Rend la modale visible */
+  display: flex;
+  /* Rend la modale visible */
   opacity: 1;
   transform: scale(1);
 }
@@ -474,12 +581,14 @@ a:hover {
   font-size: 24px;
   cursor: pointer;
 }
+
 figure {
   font-size: 13px;
   font-weight: 400;
   color: #3d3d3d;
   border-radius: 30%;
 }
+
 .delete-button {
   font-size: 17px;
   color: green;
@@ -492,11 +601,13 @@ figure {
 }
 
 .gallery-modal figure {
-  position: relative; /* Nécessaire pour le positionnement absolu des enfants */
+  position: relative;
+  /* Nécessaire pour le positionnement absolu des enfants */
 }
 
 .trash-icon {
-  position: absolute; /* Positionne par rapport à la figure */
+  position: absolute;
+  /* Positionne par rapport à la figure */
   top: 5px;
   right: 5px;
   font-size: 17px;
@@ -511,12 +622,15 @@ figure {
   width: 500px;
   height: 1px;
   background-color: #b3b3b3;
-  margin: 45px 55px 0px 50px; /* Espacement autour de la ligne */
-  margin-bottom: 70px;
+  margin: 45px 55px 0px 50px;
+  /* Espacement autour de la ligne */
+  margin-bottom: 98px;
 }
+
 .add-photo-label {
   background-color: #e8f1f6;
 }
+
 .montain-sun {
   display: flex;
   justify-content: center;
@@ -528,6 +642,7 @@ figure {
   height: 55px;
   padding: 2px;
 }
+
 .montain-sun i {
   background-color: transparent !important;
   border: 4px solid #b9c5cc;
@@ -535,6 +650,7 @@ figure {
   border-radius: 10px;
   color: #b9c5cc;
 }
+
 .add-photo-btn {
   display: flex;
   justify-content: center;
@@ -553,15 +669,18 @@ figure {
 }
 
 #preview-container {
-  position: absolute; /* Permet de positionner l'aperçu par rapport à son conteneur parent */
+  position: absolute;
+  /* Permet de positionner l'aperçu par rapport à son conteneur parent */
   top: 118px;
   left: 50%;
-  transform: translateX(-50%); /* Correction pour le centrage */
+  transform: translateX(-50%);
+  /* Correction pour le centrage */
   text-align: center;
 }
 
 #image {
-  display: none; /* Masque l'élément */
+  display: none;
+  /* Masque l'élément */
 }
 
 #image-preview {
@@ -572,7 +691,8 @@ figure {
 
 /* Conteneur des champs "Titre", "Catégorie" et "Valider" */
 .form-fields-container {
-  margin-top: 40px; /* Pour s'assurer qu'il ne chevauche pas l'autre conteneur */
+  margin-top: 40px;
+  /* Pour s'assurer qu'il ne chevauche pas l'autre conteneur */
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -631,6 +751,7 @@ figure {
   font-family: "Work Sans";
   color: #3d3d3d;
 }
+
 #category-list {
   position: relative;
   margin-top: 55px;
@@ -681,7 +802,8 @@ figure {
   padding: 10px;
   border: 0px;
 
-  width: 100%; /* S'adapte à la largeur du conteneur parent */
+  width: 100%;
+  /* S'adapte à la largeur du conteneur parent */
   background-color: #fff;
   font-family: "Work Sans", sans-serif;
   box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.3);
@@ -716,13 +838,16 @@ figure {
   border: none;
   border-radius: 20px;
   cursor: pointer;
-  align-self: center; /* Centre le bouton dans le conteneur */
+  align-self: center;
+  /* Centre le bouton dans le conteneur */
   transition: background-color 0.3s ease;
 }
 
 .error-message {
-  display: none; /* Tous les messages d'erreur sont cachés par défaut */
-  color: red; /* Si affichés, ils seront en rouge */
+  display: none;
+  /* Tous les messages d'erreur sont cachés par défaut */
+  color: red;
+  /* Si affichés, ils seront en rouge */
   font-size: 0.9em;
   margin-top: 5px;
   background-color: inherit;
@@ -730,5 +855,6 @@ figure {
 
 #title-photo-modal:focus,
 #category:focus {
-  outline: none; /* Supprime le cadre par défaut */
+  outline: none;
+  /* Supprime le cadre par défaut */
 }

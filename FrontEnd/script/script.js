@@ -54,6 +54,7 @@ links.forEach((link) => {
 function toggleLoginLogoutButton() {
   const loginLogoutButton = document.getElementById('loginLogoutButton');
   
+  
   if (loginLogoutButton) {
     if (localStorage.getItem('authToken')) {
       loginLogoutButton.textContent = 'Logout';

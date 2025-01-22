@@ -50,7 +50,7 @@ async function handleLogin() {
         console.log("Token stocké :", localStorage.getItem("authToken"));
         
         // redirection vers page d'accueil
-        window.location.href = "/FrontEnd/index.html"; // Assurez-vous que ce chemin est correct
+        window.location.href = "/FrontEnd/script/index.html"; // Assurez-vous que ce chemin est correct
       } else {
         console.error("Erreur : Le token est manquant dans la réponse");
         alert("Une erreur est survenue. Merci de réessayer plus tard.");

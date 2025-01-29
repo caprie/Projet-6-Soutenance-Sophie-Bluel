@@ -20,9 +20,9 @@
       <!-- retrait portfolio + intro de index -->
       <nav>
         <ul>
-          <li><a href="index.html#portfolio">projets</a></li>
-          <li><a href="index.html#contact">contact</a></li>
-          <li><a href="script/login.html">login</a></li>
+          <li><a href="index.html#portfolio">projets</a></li> <!-- lien vers la section portfolio de index.html -->
+          <li><a href="index.html#contact">contact</a></li> <!-- lien vers la section contact de index.html -->
+          <li><a href="script/login.html">login</a></li> <!-- lien vers la page de connexion -->
           <li><img src="../assets/icons/instagram.png" alt="Instagram" /></li>
         </ul>
       </nav>
@@ -30,20 +30,20 @@
     <main>
       <section id="contact">
         <h2>Log In</h2>
-        <form id="login-form" method="post">
+        <form id="login-form" method="post"> <!-- formulaire de connexion -->
           <!-- champ pour le mail -->
-          <label for="email">E-mail</label>
-          <input type="email" name="email" id="email" required />
+          <label for="email">E-mail</label> <!-- champ pour l'adresse mail -->
+          <input type="email" name="email" id="email" required autocomplete="email" /> <!-- champ obligatoire -->
 
           <!-- champ pour le MdP -->
           <label for="password">Mot de passe</label>
-          <input type="password" name="password" id="password" required />
+          <input type="password" name="password" id="password" required autocomplete="current-password" />
 
           <!-- bouton se connecter -->
           <input type="submit" value="Se connecter" />
 
           <!-- lien pour MdP oublié -->
-          <p><a href="#">Mot de passe oublié ?</a></p>
+          <p><a href="#">Mot de passe oublié ?</a></p> <!-- lien vers une page pour réinitialiser le mot de passe -->
         </form>
       </section>
     </main>
@@ -56,6 +56,6 @@
       </nav>
     </footer>
 
-    <script src="/FrontEnd/script/login.js"></script>
+    <script src="/FrontEnd/script/login.js"></script> <!-- lien vers le script de la page de connexion -->
   </body>
 </html>

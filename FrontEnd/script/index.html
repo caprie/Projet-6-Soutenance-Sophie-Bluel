@@ -24,7 +24,7 @@
     </div>
 
     <header>
-      <h1>Sophie Bluel <span>Architecte d'intérieur</span></h1>
+      <h1>Sophie Bluel <span>Architecte d'intérieur</span></h1> 
       <nav>
         <ul>
           <li><a href="index.html#portfolio">projets</a></li>
@@ -34,12 +34,15 @@
               >login</a
             >
           </li>
+
           <li>
             <img src="/FrontEnd/assets/icons/instagram.png" alt="Instagram" />
           </li>
+
         </ul>
       </nav>
     </header>
+
     <main>
       <section id="introduction">
         <figure>
@@ -64,6 +67,7 @@
           </p>
         </article>
       </section>
+
       <section id="portfolio">
         <h2>
           Mes Projets
@@ -77,7 +81,7 @@
       <section id="contact">
         <h2>Contact</h2>
         <p>Vous avez un projet ? Discutons-en !</p>
-        <form action="#" method="post">
+        <form action="#" method="post"> 
           <label for="name">Nom</label>
           <input type="text" name="name" id="name" />
           <label for="email">Email</label>
@@ -98,9 +102,9 @@
     </footer>
 
     <!-- MODALE -->
-    <div id="gallery-modal" class="hidden">
-      <div class="modal-content">
-        <span class="close-modal">&times;</span>
+    <div id="gallery-modal" class="hidden"> <!-- 1ère Modale : Galerie photo -->
+      <div class="modal-content"> <!-- Contenu de la modale -->
+        <span class="close-modal">&times;</span> <!-- Bouton fermer / &times; =symbole "×" utilisé comme bouton pour fermer une fenêtre modale -->
         <h3>Galerie photo</h3>
         <div class="gallery-modal">
           <!-- Contenu de la galerie modale -->
@@ -127,7 +131,7 @@
             </div>
             <label for="image" class="add-photo-label">
               <span class="add-photo-btn">+ Ajouter photo</span>
-              <input type="file" id="image" name="image" accept="image/*" />
+              <input type="file" id="image" name="image" accept="image/*" /> <!-- accept="image/*" = accepte tous les types d'images -->
             </label>
             <p class="image-format">jpg, png : 4mo max</p>
           </div>
@@ -149,7 +153,7 @@
             <div class="field-field-category">
               <label for="category" id="category-list">Catégorie</label>
               <select id="category" name="category" required>
-                <option value="" disabled selected hidden></option>
+                <option value="" disabled selected hidden></option> <!-- disabled = non sélectionnable, selected = sélectionné par défaut, hidden = invisible -->
               </select>
               <p class="error-message">
                 Vous devez sélectionner une catégorie.
@@ -178,6 +182,6 @@
     <!-- Bouton Login/Logout -->
     <button id="loginLogoutButton">Login</button>
 
-    <script src="/FrontEnd/script/script.js"></script>
+    <script src="/FrontEnd/script/script.js"></script> 
   </body>
 </html>
